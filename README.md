@@ -18,7 +18,7 @@ student-es6-vite/
 ```
 
 
-## 핵심 ECMAScript 기능 (초/중급용)
+## 핵심 ECMAScript 기능 (Level2)
 
 
 ### 1. 모듈 시스템 (ES6 Modules)
@@ -27,7 +27,6 @@ student-es6-vite/
 export const apiService = {
     getStudents: async () => { ... }
 }
-
 
 // main.js에서 가져오기
 import { apiService } from './modules/api.js'
@@ -39,7 +38,6 @@ import { validateStudent } from './modules/validation.js'
 ```javascript
 // 객체에서 값 추출
 const { name, studentNumber } = student
-
 
 // 기본값과 함께 사용
 const { name = '', studentNumber = '', detail = {} } = student
@@ -54,7 +52,6 @@ const getFormData = () => {
     return { name: name.trim(), studentNumber: studentNumber.trim() }
 }
 ```
-
 
 ### 3. 화살표 함수 (Arrow Functions) - 기본편
 ```javascript
